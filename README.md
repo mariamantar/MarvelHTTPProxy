@@ -1,11 +1,6 @@
 # Marvel_Http_Proxy
 Marvel API proxy using NodeJs with React Front end 
 
-## Challenges experienced 
-- Adding md5 digest 
-- displaying the thumbnails 
-- Adding in-memory caching 
-
 ## The App 
 Task - Create a http proxy using the Marvel API with React on the front-end 
 This full stack application was built using the Marvel API on a Node Server with the ExpressJs framework. 
@@ -18,6 +13,11 @@ This full stack application was built using the Marvel API on a Node Server with
 - dotenv to hide API keys on Github 
 - Flatui for picking out solid styling colors 
 - Google fonts for font-family 
+
+## Challenges experienced 
+- Adding md5 digest 
+- displaying the thumbnails 
+- Adding in-memory caching 
 
 ## To run the app - npm run dev 
 
