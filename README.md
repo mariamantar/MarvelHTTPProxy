@@ -19,4 +19,6 @@ This full stack application was built using the Marvel API on a Node Server with
 - Flatui for picking out solid styling colors 
 - Google fonts for font-family 
 
+## To run the app - npm run dev 
+
 ![Screen Shot 2019-03-29 at 4 50 03 pm](https://user-images.githubusercontent.com/37126943/55133950-9f7c4d80-50e4-11e9-881f-d1eb0ed162c6.png)
