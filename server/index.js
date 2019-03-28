@@ -5,7 +5,6 @@ const fetch = require('node-fetch');
 const crypto = require('crypto')
 
 
-
 // ##CREATE APP INSTANCE
 const app = express();
 
@@ -24,10 +23,9 @@ app.get('/', (req, res) => {
     .then(response => response.json())
     .then(json => {
       res.json(json);
+      console.log(json);
     });
 });
-
-
 
 
 // ##ERROR HANDLER
