@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class Characters extends Component {
   constructor(){
     super();
@@ -28,16 +27,18 @@ class Characters extends Component {
     const { characters } = this.state;
     console.log(characters, this.state);
     return (
-      <div>
-        <input type="text" placeholder="Search" onChange={this.search} />
+      <div >
+      <div className="search-input">
+        <input type="text" placeholder="Search Characters" onChange={this.search} />
+      </div>
         {
         // map through the characters
           characters
           .filter(character => character.name.toLowerCase().includes(this.state.search))
           .map((character, index) => (
-            <div key={index}>
-              <h2>{character.name}</h2>
-              <img width="100" src={character.thumbnail.path + '.' + character.thumbnail.extension} />
+            <div className="cards" key={index}>
+              <h2 className="charName">{character.name}</h2>
+              <img className="thumbnail" src={character.thumbnail.path + '.' + character.thumbnail.extension} />
             </div>
           ))
         }

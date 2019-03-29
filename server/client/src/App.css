@@ -1,8 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed');
+
 .App {
   text-align: center;
-  background-image: url('./ironman.jpg');
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  height: 100vh;
 }
-
+.image {
+  background-image: url('./ironman.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 .search-title {
-  color: white;
+  color: #ff7675;
+  font-size: 50px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Cabin Condensed', sans-serif;
+}
+.search-input input {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 10px;
+}
+.charName {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.thumbnail {
+  width: 200px;
+  height: 200px;
+}
+.cards {
+  align: center;
+  display: inline-block;
+  border-width: 10px;
+  border-radius: 10px;
+  background-color: #ff7675;
+  padding: 10px;
+  margin: 10px;
+}
+.bg {
+  background-color: black;
+  height: 750%;
 }
