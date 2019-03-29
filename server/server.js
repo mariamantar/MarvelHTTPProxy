@@ -22,9 +22,14 @@ app.get('/', (req, res) => {
   fetch(`${url}?ts=${ts}&apikey=${PUBLIC_KEY}&hash=${hash}`)
     .then(response => response.json())
     .then(json => {
-      res.json(json);
-      console.log(json);
-    });
+
+      res.json(json.data.results);
+
+    })
+    .catch(e => {
+      res.status(500)
+        .json({ error: true })
+    })
 });
 
 
